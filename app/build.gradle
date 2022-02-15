@@ -7,6 +7,9 @@ android {
     compileSdk 30
 
     defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
         applicationId "com.example.to_do_list"
         minSdk 21
         targetSdk 30
